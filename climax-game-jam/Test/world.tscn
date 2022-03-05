@@ -2,7 +2,7 @@
 
 [ext_resource path="res://climax-game-jam/Test/Player.gd" type="Script" id=1]
 [ext_resource path="res://climax-game-jam/Ground/Ground.tscn" type="PackedScene" id=2]
-[ext_resource path="res://art/Motocycle.png" type="Texture" id=3]
+[ext_resource path="res://art/motorcycle.png" type="Texture" id=3]
 [ext_resource path="res://climax-game-jam/Test/Enemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://sounds/background.ogg" type="AudioStream" id=5]
 [ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=6]
@@ -22,7 +22,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "jump",
+"name": "fall",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ) ],
@@ -32,7 +32,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "fall",
+"name": "jump",
 "speed": 5.0
 } ]
 

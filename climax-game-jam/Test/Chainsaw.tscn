@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://climax-game-jam/Test/Fireball.gd" type="Script" id=1]
+[ext_resource path="res://climax-game-jam/Test/Chainsaw.gd" type="Script" id=1]
 [ext_resource path="res://art/Chainsaw/chainsaw7.png" type="Texture" id=2]
 [ext_resource path="res://art/Chainsaw/chainsaw5.png" type="Texture" id=3]
 [ext_resource path="res://art/Chainsaw/chainsaw1.png" type="Texture" id=4]
@@ -19,7 +19,7 @@ animations = [ {
 
 [sub_resource type="CircleShape2D" id=2]
 
-[node name="Fireball" type="Area2D"]
+[node name="Chainsaw" type="Area2D"]
 script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -37,5 +37,5 @@ shape = SubResource( 2 )
 position = Vector2( 4, -1.5 )
 scale = Vector2( 1.7, 0.85 )
 
-[connection signal="body_entered" from="." to="." method="_on_Fireball_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_Chainsaw_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

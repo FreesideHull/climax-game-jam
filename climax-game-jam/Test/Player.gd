@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const FIREBALL = preload("res://climax-game-jam/Test/Chainsaw.tscn")
+const Chainsaw = preload("res://climax-game-jam/Test/Chainsaw.tscn")
 
 var speed = 200
 var yspeed = 500
@@ -86,9 +86,9 @@ func get_input():
 		$AnimationPlayer.play("Idle")
 	
 	if Input.is_action_just_pressed("fire") && can_shoot:
-		var fireball = FIREBALL.instance()
-		get_parent().add_child(fireball)
-		fireball.position = $ChainsawOrigin.global_position
+		var chainsaw = Chainsaw.instance()
+		get_parent().add_child(chainsaw)
+		chainsaw.position = $ChainsawOrigin.global_position
 
 	if !isBossFight:
 		velocity.x += 1 * speed
