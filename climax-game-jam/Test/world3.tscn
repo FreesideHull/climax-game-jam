@@ -222,13 +222,3 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Cackle" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 10 )
-
-[node name="spell" type="AudioStreamPlayer" parent="."]
-
-[node name="wetspell" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 11 )
-
-[node name="laugh" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 12 )
