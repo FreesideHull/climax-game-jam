@@ -46,7 +46,7 @@ size_flags_vertical = 3
 custom_constants/separation = 41
 alignment = 1
 
-[node name="trans1Button" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="trans2Button" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_top = 250.0
 margin_right = 1040.0
 margin_bottom = 310.0
