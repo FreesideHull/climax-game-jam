@@ -9,9 +9,6 @@
 [ext_resource path="res://climax-game-jam/Test/GameUI.gd" type="Script" id=7]
 [ext_resource path="res://climax-game-jam/Test/enemiespawner.gd" type="Script" id=8]
 [ext_resource path="res://climax-game-jam/Test/Boss.tscn" type="PackedScene" id=9]
-[ext_resource path="res://sounds/cackle.wav" type="AudioStream" id=10]
-[ext_resource path="res://sounds/wetspell.wav" type="AudioStream" id=11]
-[ext_resource path="res://sounds/laugh.wav" type="AudioStream" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
