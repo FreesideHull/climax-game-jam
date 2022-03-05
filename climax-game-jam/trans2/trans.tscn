@@ -80,6 +80,5 @@ position = Vector2( 626.97, 328.944 )
 scale = Vector2( 0.663003, 0.655073 )
 texture = ExtResource( 1 )
 
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/trans1Button" to="." method="_on_trans1Button_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/trans1Button" to="." method="_on_startButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/trans2Button" to="." method="_on_trans2Button_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

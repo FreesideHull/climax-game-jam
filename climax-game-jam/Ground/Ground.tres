@@ -16,15 +16,3 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Rect2( 0, 1328, 2050, 194 ), Rect2( 1025, 1328, 2050, 194 ) ]
 }
-tracks/1/type = "value"
-tracks/1/path = NodePath("ParallaxBackground/background:region_rect")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.1, 1.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Rect2( 0.492004, 1.959, 751, 497.033 ), Rect2( 0.492004, 1.959, 751, 497.033 ) ]
-}
