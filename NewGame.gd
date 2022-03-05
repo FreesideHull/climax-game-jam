@@ -8,7 +8,7 @@ func _on_creditsButton_pressed():
 	$FadeIn.fade_in()
 
 func _on_StartGameButton_pressed():
-	scene = "res://climax-game-jam/test/world.tscn"
+	scene = "res://climax-game-jam/Test/world.tscn"
 	$FadeIn.show()
 	$FadeIn.fade_in()
 	
