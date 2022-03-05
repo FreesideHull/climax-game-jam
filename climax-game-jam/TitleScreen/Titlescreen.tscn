@@ -2,7 +2,7 @@
 
 [ext_resource path="res://art/Homescreen/titile.png" type="Texture" id=1]
 [ext_resource path="res://NewGame.gd" type="Script" id=3]
-[ext_resource path="res://climax-game-jam/test/FadeIn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://climax-game-jam/Test/FadeIn.tscn" type="PackedScene" id=4]
 
 [node name="TitleScreen" type="Control"]
 anchor_right = 1.0
@@ -36,17 +36,15 @@ custom_constants/separation = 76
 alignment = 1
 
 [node name="StartGameButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
-margin_top = 110.0
+margin_top = 182.0
 margin_right = 1040.0
-margin_bottom = 170.0
+margin_bottom = 242.0
 rect_min_size = Vector2( 0, 60 )
 size_flags_horizontal = 3
 flat = true
 align = 0
 
 [node name="creditsButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
-anchor_top = 0.0482143
-anchor_bottom = 0.0482143
 margin_top = 318.0
 margin_right = 1040.0
 margin_bottom = 378.0
