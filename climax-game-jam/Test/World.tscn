@@ -1,0 +1,237 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://climax-game-jam/Test/Player.gd" type="Script" id=1]
+[ext_resource path="res://climax-game-jam/Ground/Ground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://art/TheWitch.png" type="Texture" id=3]
+[ext_resource path="res://climax-game-jam/Test/Enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sounds/background.ogg" type="AudioStream" id=5]
+[ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://climax-game-jam/Test/GameUI.gd" type="Script" id=7]
+[ext_resource path="res://climax-game-jam/Test/enemiespawner.gd" type="Script" id=8]
+[ext_resource path="res://climax-game-jam/Test/Boss.tscn" type="PackedScene" id=9]
+[ext_resource path="res://sounds/cackle.wav" type="AudioStream" id=10]
+[ext_resource path="res://sounds/wetspell.wav" type="AudioStream" id=11]
+[ext_resource path="res://sounds/laugh.wav" type="AudioStream" id=12]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "fall",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 8.0
+height = 22.4
+
+[sub_resource type="Animation" id=3]
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 22, 23 ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 0, 1, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frames")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 1,
+"values": [  ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 8, 9, 10, 11, 12, 13 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "move"
+
+[sub_resource type="DynamicFont" id=8]
+size = 30
+font_data = ExtResource( 6 )
+
+[node name="World" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="Ground" parent="." instance=ExtResource( 2 )]
+position = Vector2( 736, 448 )
+
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 589.321, 400.036 )
+scale = Vector2( 3, 3 )
+z_as_relative = false
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="Player"]
+scale = Vector2( 0.0407854, 0.0414353 )
+z_as_relative = false
+frames = SubResource( 1 )
+animation = "run"
+playing = true
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2( 500, 0 )
+current = true
+limit_left = 0
+limit_top = 0
+limit_bottom = 120
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2( 0, 3.2 )
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+anims/Fall = SubResource( 3 )
+anims/Idle = SubResource( 4 )
+anims/Jump = SubResource( 5 )
+anims/Run = SubResource( 6 )
+anims/move = SubResource( 7 )
+
+[node name="Music" type="AudioStreamPlayer" parent="Player"]
+pause_mode = 2
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="FireballOrigin" type="Position2D" parent="Player"]
+position = Vector2( 25.6, 0 )
+
+[node name="Enemy" parent="." instance=ExtResource( 4 )]
+position = Vector2( 752, 88 )
+scale = Vector2( 5, 5 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1095.13, 96.494 )
+scale = Vector2( 5, 5 )
+
+[node name="Boss" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5408, 224 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GameUI" type="Control" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/GameUI"]
+margin_left = 291.0
+margin_top = 10.0
+margin_right = 995.0
+margin_bottom = 24.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BossHealth" type="ProgressBar" parent="CanvasLayer/GameUI"]
+visible = false
+margin_left = 291.0
+margin_top = 10.0
+margin_right = 995.0
+margin_bottom = 24.0
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lives" type="Label" parent="CanvasLayer/GameUI"]
+anchor_left = -0.025
+anchor_right = -0.025
+margin_left = 1113.0
+margin_top = 64.0
+margin_right = 1262.0
+margin_bottom = 102.0
+custom_fonts/font = SubResource( 8 )
+text = "Lives: %s"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="CanvasLayer/GameUI"]
+margin_left = 317.656
+margin_top = 50.6516
+margin_right = 466.656
+margin_bottom = 88.6516
+custom_fonts/font = SubResource( 8 )
+text = "Score: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cackle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="spell" type="AudioStreamPlayer" parent="."]
+
+[node name="wetspell" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="laugh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )

@@ -1,0 +1,146 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://climax-game-jam/GameOverScreen/score.gd" type="Script" id=1]
+[ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://NewGame.gd" type="Script" id=3]
+[ext_resource path="res://climax-game-jam/TitleScreen/FadeIn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://art/titile.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="GameOverScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 1160.0
+margin_bottom = 640.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="VBoxContainer"]
+
+[node name="Control" type="Control" parent="VBoxContainer/CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="VBoxContainer/CanvasLayer/Control"]
+margin_left = 120.0
+margin_top = 183.0
+margin_right = 1160.0
+margin_bottom = 282.0
+custom_fonts/font = SubResource( 1 )
+text = "Score: %s"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 1040.0
+margin_bottom = 99.0
+custom_fonts/font = SubResource( 1 )
+text = "GAME OVER"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 103.0
+margin_right = 1040.0
+margin_bottom = 560.0
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+margin_right = 518.0
+margin_bottom = 457.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 41
+alignment = 1
+
+[node name="StartGameButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 198.0
+margin_right = 518.0
+margin_bottom = 258.0
+rect_min_size = Vector2( 0, 60 )
+size_flags_horizontal = 3
+flat = true
+align = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/StartGameButton"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 317.0
+margin_bottom = 143.0
+rect_pivot_offset = Vector2( 187, 37 )
+custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 2 )
+text = "Start Over
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+margin_left = 522.0
+margin_right = 1040.0
+margin_bottom = 457.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 41
+alignment = 1
+
+[node name="creditsButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+margin_top = 198.0
+margin_right = 518.0
+margin_bottom = 258.0
+rect_min_size = Vector2( 0, 60 )
+size_flags_horizontal = 3
+flat = true
+align = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer2/creditsButton"]
+margin_left = 127.244
+margin_top = 21.8233
+margin_right = 428.244
+margin_bottom = 148.823
+rect_pivot_offset = Vector2( 187, 37 )
+custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 2 )
+text = "Credits
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FadeIn" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 640.639, 354.967 )
+texture = ExtResource( 5 )
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/StartGameButton" to="." method="_on_StartGameButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer2/creditsButton" to="." method="_on_creditsButton_pressed"]
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
