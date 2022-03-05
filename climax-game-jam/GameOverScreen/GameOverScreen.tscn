@@ -109,9 +109,9 @@ custom_constants/separation = 41
 alignment = 1
 
 [node name="creditsButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
-margin_top = 198.0
+margin_top = 206.0
 margin_right = 518.0
-margin_bottom = 258.0
+margin_bottom = 266.0
 rect_min_size = Vector2( 0, 60 )
 size_flags_horizontal = 3
 flat = true
@@ -129,9 +129,6 @@ custom_constants/shadow_offset_y = 2
 custom_fonts/font = SubResource( 2 )
 text = "Credits
 "
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="FadeIn" parent="." instance=ExtResource( 4 )]
 visible = false
