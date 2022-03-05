@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://art/Homescreen/titile.png" type="Texture" id=1]
+[ext_resource path="res://sounds/motorcycle_Title_Screen.wav" type="AudioStream" id=2]
 [ext_resource path="res://NewGame.gd" type="Script" id=3]
 [ext_resource path="res://climax-game-jam/Test/FadeIn.tscn" type="PackedScene" id=4]
 
@@ -58,6 +59,10 @@ show_behind_parent = true
 position = Vector2( 654, 316 )
 scale = Vector2( 0.66276, 0.663166 )
 texture = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/StartGameButton" to="." method="_on_StartGameButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/creditsButton" to="." method="_on_creditsButton_pressed"]
