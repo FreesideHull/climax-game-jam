@@ -2,7 +2,7 @@
 
 [ext_resource path="res://climax-game-jam/Test/Boss.gd" type="Script" id=1]
 [ext_resource path="res://art/Devils/devil1.png" type="Texture" id=2]
-
+[ext_resource path="res://NewGame.gd" type="Script" id=3]
 [sub_resource type="CircleShape2D" id=1]
 radius = 64.0
 

@@ -4,7 +4,7 @@ const speed = 1
 var velocity = Vector2()
 
 var is_dead = false
-
+var scene
 var health = 100;
 
 func _ready():
@@ -19,13 +19,9 @@ func hit():
 func dead():
 	is_dead = true
 	velocity = Vector2(0, 0)
-	$AnimatedSprite.play("dead")
-
-
-#func _physics_process(_delta):
-#	if is_dead == false:
-#		velocity.x -= speed
-#		velocity = move_and_slide(velocity)	
+	scene = "res://climax-game-jam/trans2/trans.tscn"
+	$FadeIn.show()
+	$FadeIn.fade_in()
 
 func _on_Timer_timeout():
 	queue_free()

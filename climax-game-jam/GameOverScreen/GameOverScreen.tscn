@@ -3,7 +3,7 @@
 [ext_resource path="res://climax-game-jam/GameOverScreen/score.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://NewGame.gd" type="Script" id=3]
-[ext_resource path="res://climax-game-jam/TitleScreen/FadeIn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://climax-game-jam/test/FadeIn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://art/Homescreen/Play-4.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]

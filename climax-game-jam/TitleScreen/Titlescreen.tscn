@@ -2,7 +2,7 @@
 
 [ext_resource path="res://art/Homescreen/titile.png" type="Texture" id=1]
 [ext_resource path="res://NewGame.gd" type="Script" id=3]
-[ext_resource path="res://climax-game-jam/TitleScreen/FadeIn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://climax-game-jam/test/FadeIn.tscn" type="PackedScene" id=4]
 
 [node name="TitleScreen" type="Control"]
 anchor_right = 1.0
