@@ -19,7 +19,7 @@ func hit():
 func dead():
 	is_dead = true
 	velocity = Vector2(0, 0)
-#	$AnimatedSprite.play("dead")
+	$AnimatedSprite.play("dead")
 
 
 #func _physics_process(_delta):

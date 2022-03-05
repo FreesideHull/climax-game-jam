@@ -7,7 +7,7 @@ signal boss_health_update
 
 var levelprogress = 0 setget set_progress
 var score = 0 setget set_score
-var lives = 5 setget set_lives
+var lives = 3 setget set_lives
 var boss_health = 100 setget set_boss_health
 var worldpos = 0
 

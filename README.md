@@ -1,5 +1,5 @@
 # Climax game jam 2022
-Freeside's 3 Climax jame gam entry for March 2022
+Freeside's Climax game gam entry for March 2022
 
 Contributers include [Chris](https://github.com/admgecko), [Matt](https://github.com/crimsontome) and Job.
 
