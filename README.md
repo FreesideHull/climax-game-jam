@@ -1,5 +1,7 @@
-# 3thinggame-2020
-Freeside's 3 Thing Game Entry for October/November 2020
+# Climax game jam 2022
+Freeside's 3 Climax jame gam entry for March 2022
+
+Contributers include [Chris](https://github.com/admgecko), [Matt](https://github.com/crimsontome) and Job.
 
 # Getting Started
 
@@ -11,7 +13,7 @@ Once cloned onto your local machine open the project by importing into godot (ve
 
 Click on project / setup version control / then initialize to pull in the git repo
 
-Further distructions will be dropped into doc/ as and when i get chance to write them :)
+Further instructions will be dropped into doc as and when i get chance to write them :)
 
 # Licence
 
