@@ -155,7 +155,7 @@ pause_mode = 2
 stream = ExtResource( 5 )
 autoplay = true
 
-[node name="FireballOrigin" type="Position2D" parent="Player"]
+[node name="ChainsawOrigin" type="Position2D" parent="Player"]
 position = Vector2( 25.6, 0 )
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]

@@ -16,7 +16,7 @@ func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 	
 
-func _on_Fireball_body_entered(body):
+func _on_Chainsaw_body_entered(body):
 	if "Enemy" in body.name:
 		PlayerData.score = PlayerData.score + 10 
 		body.dead()

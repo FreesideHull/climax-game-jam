@@ -58,7 +58,7 @@ visible = false
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( 653, 319 )
+position = Vector2( 654, 316 )
 scale = Vector2( 0.66276, 0.663166 )
 texture = ExtResource( 1 )
 
