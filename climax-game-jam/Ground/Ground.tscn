@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://climax-game-jam/Ground/Ground.gd" type="Script" id=1]
-[ext_resource path="res://art/Environment/ground.png" type="Texture" id=2]
+[ext_resource path="res://art/Environment/pavement1.png" type="Texture" id=2]
 [ext_resource path="res://climax-game-jam/Ground/Ground.tres" type="Animation" id=3]
 [ext_resource path="res://art/Environment/road.png" type="Texture" id=4]
 
@@ -17,7 +17,7 @@ script = ExtResource( 1 )
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="background3" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 871.343, 413.857 )
+position = Vector2( 871.343, 415.857 )
 scale = Vector2( 1.27475, 1.33117 )
 texture = ExtResource( 4 )
 offset = Vector2( -311.726, -47.7075 )
@@ -25,7 +25,7 @@ region_enabled = true
 region_rect = Rect2( 0.492004, 1.959, 751, 497.033 )
 
 [node name="background" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 1942, 415 )
+position = Vector2( 1942, 416 )
 scale = Vector2( 1.5964, 1.33117 )
 texture = ExtResource( 4 )
 offset = Vector2( -311.726, -47.7075 )
@@ -33,7 +33,7 @@ region_enabled = true
 region_rect = Rect2( 0.492004, 1.959, 751, 497.033 )
 
 [node name="background2" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 4189.59, 409.619 )
+position = Vector2( 4189.59, 415.619 )
 scale = Vector2( 3.33442, 1.33117 )
 texture = ExtResource( 4 )
 offset = Vector2( -311.726, -47.7075 )
