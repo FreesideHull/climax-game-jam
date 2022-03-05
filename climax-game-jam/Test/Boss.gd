@@ -20,8 +20,7 @@ func dead():
 	is_dead = true
 	velocity = Vector2(0, 0)
 	scene = "res://climax-game-jam/trans2/trans.tscn"
-	$FadeIn.show()
-	$FadeIn.fade_in()
+	get_tree().change_scene(scene)
 
 func _on_Timer_timeout():
 	queue_free()
