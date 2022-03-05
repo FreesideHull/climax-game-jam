@@ -79,4 +79,3 @@ menu={
 
 quality/driver/driver_name="GLES2"
 environment/default_clear_color=Color( 0.0627451, 0.2, 0.360784, 1 )
-environment/default_environment="res://climax-game-jam/Test/default_env.tres"
