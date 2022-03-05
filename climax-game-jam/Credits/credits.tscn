@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=2]
 
+[ext_resource path="res://art/Homescreen/Play-4.png" type="Texture" id=1]
 [ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://NewGame.gd" type="Script" id=3]
 [ext_resource path="res://climax-game-jam/TitleScreen/FadeIn.tscn" type="PackedScene" id=4]
-[ext_resource path="res://art/titile.png" type="Texture" id=5]
 
 [sub_resource type="BitmapFont" id=1]
 height = 2.0
@@ -69,14 +69,18 @@ size_flags_horizontal = 4
 custom_fonts/font = SubResource( 2 )
 text = "Credits
 
+Chris Boczko
+Matt Clark
+Job Smoot
+
 Click to here go back"
 align = 1
 
 [node name="Sprite3" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( 606.128, 336.738 )
-scale = Vector2( 1.01565, 0.990199 )
-texture = ExtResource( 5 )
+position = Vector2( 626.97, 328.944 )
+scale = Vector2( 0.663003, 0.655073 )
+texture = ExtResource( 1 )
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/backButton" to="." method="_on_backButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
