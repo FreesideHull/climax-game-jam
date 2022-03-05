@@ -25,7 +25,7 @@ region_enabled = true
 region_rect = Rect2( 0.492004, 1.959, 751, 497.033 )
 
 [node name="background" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 1939.96, 409.619 )
+position = Vector2( 1942, 415 )
 scale = Vector2( 1.5964, 1.33117 )
 texture = ExtResource( 4 )
 offset = Vector2( -311.726, -47.7075 )
