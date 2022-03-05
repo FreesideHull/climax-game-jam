@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Test"
-run/main_scene="res://climax-game-jam/Titlescreen/Titlescreen.tscn"
+run/main_scene="res://climax-game-jam/TitleScreen/Titlescreen.tscn"
 
 [audio]
 
