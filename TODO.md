@@ -1,6 +1,6 @@
 # TODO List
 
-[ ] linux support
+[ ] linux support without the need for git wizardry
 [ ] second world
 [ ] boss level
 [ ] boss config
