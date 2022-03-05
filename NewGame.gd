@@ -1,6 +1,5 @@
 extends Control
 
-
 var scene
 
 func _on_creditsButton_pressed():
