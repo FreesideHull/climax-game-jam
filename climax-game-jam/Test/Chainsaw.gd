@@ -10,6 +10,7 @@ func _physics_process(delta):
 	velocity.x = speed * delta
 	translate(velocity)
 	$AnimatedSprite.play("shoot")
+	$Chainsaw.play()
 	
 
 func _on_VisibilityNotifier2D_screen_exited():

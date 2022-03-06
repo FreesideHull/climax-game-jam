@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://climax-game-jam/Test/Chainsaw.gd" type="Script" id=1]
 [ext_resource path="res://art/Chainsaw/chainsaw7.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://art/Chainsaw/chainsaw6.png" type="Texture" id=6]
 [ext_resource path="res://art/Chainsaw/chainsaw2.png" type="Texture" id=7]
 [ext_resource path="res://art/Chainsaw/chainsaw3.png" type="Texture" id=8]
+[ext_resource path="res://sounds/Chainsaw.wav" type="AudioStream" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -36,6 +37,10 @@ shape = SubResource( 2 )
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 position = Vector2( 4, -1.5 )
 scale = Vector2( 1.7, 0.85 )
+
+[node name="Chainsaw" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = 24.0
 
 [connection signal="body_entered" from="." to="." method="_on_Chainsaw_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
