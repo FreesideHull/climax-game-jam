@@ -19,10 +19,10 @@ Windows should work with no issues, just download the zip from the releases sect
 Linux just needs an additional step after extracting the linux.zip file. you need to run `chmod +x Game.x86_64` in a terminal to make it executable. Then you should be able to run it.  
 Macos binary in testing, run at your own risk
 
-#playing the game
+# playing the game
 
-button hitboxes are a bit skewed at the moment, we are working on fixing it but godot's GUI editor is being a pain
+button hitboxes are a bit skewed at the moment, we are working on fixing it but godot's GUI editor is being a pain  
 
-w - move up
-s - move down
-spacebar - fire chainsaw
+w - move up  
+s - move down  
+spacebar - fire chainsaw  
