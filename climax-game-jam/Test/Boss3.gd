@@ -28,6 +28,5 @@ func _on_Timer_timeout():
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
-
 func _on_VisibilityNotifier2D_viewport_entered(viewport):
 	pass # Replace with function body.
