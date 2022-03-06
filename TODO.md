@@ -18,3 +18,4 @@
 [ ] change facing of enemies  
 [x] The background on level two needs aligning
 [ ] extend levels
+[ ] fix hitboxes
