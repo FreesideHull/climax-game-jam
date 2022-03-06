@@ -17,7 +17,7 @@ The game is available currently on both windows and linux, with macos support co
 Binaries are available to download [here](https://github.com/FreesideHull/climax-game-jam/releases/)  
 Windows should work with no issues, just download the zip from the releases section, extract it and run the .exe file.  
 Linux just needs an additional step after extracting the linux.zip file. you need to run `chmod +x Game.x86_64` in a terminal to make it executable. Then you should be able to run it.  
-Macos binary in testing, run at your own risk
+Macos binary is released, however IT IS NOT FUNCTIONAL at the time being. this could be due to a few things, either my build config is wrong or because I can't sign the executable macos gatekeeper blocks execution. you can probably get around this but at your OWN risk.
 
 # playing the game
 

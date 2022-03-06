@@ -89,6 +89,11 @@ func get_input():
 		var chainsaw = Chainsaw.instance()
 		get_parent().add_child(chainsaw)
 		chainsaw.position = $ChainsawOrigin.global_position
+		
+		can_shoot = false
+		yield(get_tree().create_timer(1.0), "timeout")
+		can_shoot= true
+		
 
 	if !isBossFight:
 		velocity.x += 1 * speed
