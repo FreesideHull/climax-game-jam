@@ -67,9 +67,9 @@ margin_right = 1629.32
 margin_bottom = 729.993
 size_flags_horizontal = 4
 custom_fonts/font = SubResource( 2 )
-text = "\"Thats one demon down!
-Im gonna keep on hunting until I find the one
-responsible!\"
+text = "\"That's the last of his henchmen - now
+time to take on the devil himself!
+Its now or never!
 
 Click to here go get them!"
 align = 1
@@ -80,6 +80,4 @@ position = Vector2( 626.97, 328.944 )
 scale = Vector2( 0.663003, 0.655073 )
 texture = ExtResource( 1 )
 
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/trans1Button" to="." method="_on_trans1Button_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/trans1Button" to="." method="_on_startButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
