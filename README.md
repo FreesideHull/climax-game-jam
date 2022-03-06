@@ -15,4 +15,4 @@ Click on project / setup version control / then initialize to pull in the git re
 
 Further instructions will be dropped into doc as and when i get chance to write them :)
 
-Recent changes allow the game to be ran on Linux with *no* (for now) issues
+Recent changes allow the game to be ran on Linux with *no* (for now) issues. When updating assets we may come into some issues, these will be fixed without the need for symlinks.
