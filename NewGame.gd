@@ -19,12 +19,12 @@ func _on_backButton_pressed():
 	$FadeIn.fade_in()
 
 func _on_trans1Button_pressed():
-	scene = "res://climax-game-jam/test/world.tscn"
+	scene = "res://climax-game-jam/Test/world.tscn"
 	$FadeIn.show()
 	$FadeIn.fade_in()
 
 func _on_trans2Button_pressed():
-	scene = "res://climax-game-jam/test/world2.tscn"
+	scene = "res://climax-game-jam/Test/world2.tscn"
 	$FadeIn.show()
 	$FadeIn.fade_in()
 
