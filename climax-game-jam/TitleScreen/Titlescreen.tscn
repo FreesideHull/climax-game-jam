@@ -34,16 +34,16 @@ custom_constants/separation = 76
 alignment = 1
 
 [node name="StartGameButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
-margin_top = 182.0
+margin_top = 111.0
 margin_right = 1040.0
-margin_bottom = 242.0
+margin_bottom = 171.0
 rect_min_size = Vector2( 0, 60 )
 size_flags_horizontal = 3
 flat = true
 align = 0
 
 [node name="creditsButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
-margin_top = 318.0
+margin_top = 341.0
 margin_right = 1040.0
 margin_bottom = 378.0
 rect_min_size = Vector2( 0, 60 )
