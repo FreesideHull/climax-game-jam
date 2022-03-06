@@ -4,6 +4,6 @@
 [ ] second world  
 [ ] boss level  
 [ ] boss config  
-[ ] ground fixes for world 2 
+[ ] ground fixes for world 2  
 [ ] Fixed Game over screen to move to credits and / or new game  
 
