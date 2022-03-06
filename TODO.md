@@ -10,3 +10,7 @@
 [ ] limit the number of chainsaws allowed onscreen to stop framerate issues on lower end devices --assigned to admgecko
 [x] Chainsaw Sound --assigned to pianoguru
 [ ] export binaries for each platform --assigned to admgecko
+[x] windows binary
+[ ] linux binary
+[ ] macos binary
+[x] importing to godot to run on any platform
