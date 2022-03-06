@@ -7,7 +7,7 @@
 [ext_resource path="res://sounds/Motorcycle_Mayhem_Level_2.wav" type="AudioStream" id=5]
 [ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://climax-game-jam/Test/GameUI.gd" type="Script" id=7]
-[ext_resource path="res://climax-game-jam/Test/enemiespawner.gd" type="Script" id=8]
+[ext_resource path="res://climax-game-jam/Test/enemiespawner1.gd" type="Script" id=8]
 [ext_resource path="res://climax-game-jam/Test/Boss2.tscn" type="PackedScene" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
