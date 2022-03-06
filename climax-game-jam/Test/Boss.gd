@@ -19,7 +19,7 @@ func hit():
 func dead():
 	is_dead = true
 	velocity = Vector2(0, 0)
-	scene = "res://climax-game-jam/trans-final/trans.tscn"
+	scene = "res://climax-game-jam/tran2/trans.tscn"
 	get_tree().change_scene(scene)
 
 func _on_Timer_timeout():

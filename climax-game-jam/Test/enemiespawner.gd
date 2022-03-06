@@ -8,8 +8,8 @@ var enemycount = 0
 
 func _ready():
 	var rand = RandomNumberGenerator.new()
-	var enemyscene = load("res://climax-game-jam/Test/Enemy.tscn")
-	var world = load("res://climax-game-jam/Test/world.tscn")
+	var enemyscene = load("res://climax-game-jam/Test/Enemy3.tscn")
+	var world = load("res://climax-game-jam/Test/world3.tscn")
 	var screen_size = get_viewport().get_visible_rect().size
 	timer = Timer.new()
 	timer.set_one_shot(false)
