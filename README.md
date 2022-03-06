@@ -9,10 +9,11 @@ You'll need a working git client and godot install
 
 Clone the repo and import the project
 
-Once cloned onto your local machine open the project by importing into godot (version 3.2.x)
+see [here](https://github.com/FreesideHull/climax-game-jam/blob/matt/howtogodot.odt) for how to develop if not using git, clone instead of downloading the zip if you are using git
 
-Click on project / setup version control / then initialize to pull in the git repo
+# platform support
 
-Further instructions will be dropped into doc as and when i get chance to write them :)
-
-Recent changes allow the game to be ran on Linux with *no* (for now) issues. When updating assets we may come into some issues, these will be fixed without the need for symlinks.
+The game is available currently on both windows and linux, with macos support coming soon.  
+Binaries are available to download [here](https://github.com/FreesideHull/climax-game-jam/releases/)  
+Windows should work with no issues, just download the zip from the releases section, extract it and run the .exe file.  
+Linux just needs an additional step after extracting the linux.zip file. you need to run `chmod +x Game.x86_64` in a terminal to make it executable. Then you should be able to run it
