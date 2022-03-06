@@ -8,3 +8,4 @@
 [x] Fixed Game over screen to move to credits and / or new game  
 [x] Art for 2nd and boss level --assigned to pianoguru
 [ ] limit the number of chainsaws allowed onscreen to stop framerate issues on lower end devices --assigned to admgecko
+[ ] Chainsaw Sound --assigned to pianoguru
