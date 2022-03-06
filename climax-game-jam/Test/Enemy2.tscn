@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://climax-game-jam/Test/Enemy.gd" type="Script" id=1]
 [ext_resource path="res://art/Devils/devil-pos1.png" type="Texture" id=2]
 [ext_resource path="res://art/Devils/devil-pos3.png" type="Texture" id=3]
 [ext_resource path="res://art/Devils/devil-pos2.png" type="Texture" id=4]
+[ext_resource path="res://art/Devils/devil5-pos1.png" type="Texture" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -13,7 +14,7 @@ height = 13.3438
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "dead",
 "speed": 5.0
