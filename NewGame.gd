@@ -16,7 +16,7 @@ func _on_StartGameButton_pressed():
 	get_tree().change_scene(scene)
 	
 func _on_backButton_pressed():
-	scene = "res://climax-game-jam/TitleScreen/TitleScreen.tscn"
+	scene = "res://climax-game-jam/TitleScreen/Titlescreen.tscn"
 	$FadeIn.show()
 	$FadeIn.fade_in()
 
