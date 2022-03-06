@@ -33,7 +33,7 @@ region_enabled = true
 region_rect = Rect2( 0.492004, 1.959, 751, 497.033 )
 
 [node name="background2" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 4189.59, 415.619 )
+position = Vector2( 4189.59, 416.619 )
 scale = Vector2( 3.33442, 1.33117 )
 texture = ExtResource( 4 )
 offset = Vector2( -311.726, -47.7075 )
@@ -51,7 +51,7 @@ region_rect = Rect2( 0, 1328, 2050, 194 )
 anims/scrolling = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 2033.09, 252.658 )
+position = Vector2( 2028.09, 252.658 )
 scale = Vector2( 999, 1 )
 shape = SubResource( 1 )
 
