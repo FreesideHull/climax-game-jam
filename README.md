@@ -15,4 +15,4 @@ Click on project / setup version control / then initialize to pull in the git re
 
 Further instructions will be dropped into doc as and when i get chance to write them :)
 
-If you are running on Linux, you will need to create a symlink to allow a folder to be read from properly. From `climax-game-jam/` do `echo test >> .gitignore` then `cd climax-game-jam` and then create the symlink with `ln -s Test test`. DO NOT REMOVE `test` from the `.gitignore` as this will break the game for Windows users.
+Recent changes allow the game to be ran on Linux with *no* (for now) issues

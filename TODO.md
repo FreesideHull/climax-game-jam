@@ -1,6 +1,6 @@
 # TODO list
 
-[ ] linux support without the need for git magic  --assigned to CTome
+[x] linux support without the need for git magic  --assigned to CTome
 [ ] second world  
 [ ] boss level  
 [ ] boss config  
