@@ -30,5 +30,11 @@ func _on_trans2Button_pressed():
 	$FadeIn.show()
 	$FadeIn.fade_in()
 
+func _on_transfinalButton_pressed():
+	scene = "res://climax-game-jam/Test/world3.tscn"
+	$FadeIn.show()
+	$FadeIn.fade_in()
+
+
 func _on_FadeIn_fade_finished():
 	get_tree().change_scene(scene)

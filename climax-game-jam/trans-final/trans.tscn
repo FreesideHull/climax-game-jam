@@ -46,7 +46,7 @@ size_flags_vertical = 3
 custom_constants/separation = 41
 alignment = 1
 
-[node name="trans2Button" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="transfinalButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_top = 250.0
 margin_right = 1040.0
 margin_bottom = 310.0
@@ -80,4 +80,5 @@ position = Vector2( 626.97, 328.944 )
 scale = Vector2( 0.663003, 0.655073 )
 texture = ExtResource( 1 )
 
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/transfinalButton" to="." method="_on_transfinalButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
