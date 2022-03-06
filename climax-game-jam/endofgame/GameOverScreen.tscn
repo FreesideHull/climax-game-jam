@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://climax-game-jam/GameOverScreen/score.gd" type="Script" id=1]
+[ext_resource path="res://climax-game-jam/endofgame/score.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://NewGame.gd" type="Script" id=3]
 [ext_resource path="res://climax-game-jam/TitleScreen/FadeIn.tscn" type="PackedScene" id=4]
@@ -18,7 +18,7 @@ size = 50
 use_filter = true
 font_data = ExtResource( 2 )
 
-[node name="GameOverScreen" type="Control"]
+[node name="endofgame" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 3 )
