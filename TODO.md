@@ -9,8 +9,11 @@
 [x] Art for 2nd and boss level --assigned to pianoguru
 [ ] limit the number of chainsaws allowed onscreen to stop framerate issues on lower end devices --assigned to admgecko
 [x] Chainsaw Sound --assigned to pianoguru
-[ ] export binaries for each platform --assigned to admgecko
-[x] windows binary
-[x] linux binary
-[ ] macos binary
-[x] importing to godot to run on any platform
+[ ] export binaries for each platform --assigned to admgecko  
+[x] windows binary  
+[x] linux binary  
+[ ] macos binary  
+[x] importing to godot to run on any platform  
+[ ] music loop  
+[ ] change facing of enemies  
+[ ] The background on level two needs aligning
