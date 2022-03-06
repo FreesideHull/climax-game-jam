@@ -37,3 +37,4 @@ func _on_transfinalButton_pressed():
 
 func _on_FadeIn_fade_finished():
 	get_tree().change_scene(scene)
+	
