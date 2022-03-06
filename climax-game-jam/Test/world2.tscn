@@ -3,12 +3,12 @@
 [ext_resource path="res://climax-game-jam/Test/Player.gd" type="Script" id=1]
 [ext_resource path="res://climax-game-jam/Ground2/Ground.tscn" type="PackedScene" id=2]
 [ext_resource path="res://art/motorcycle/motorcycle.png" type="Texture" id=3]
-[ext_resource path="res://climax-game-jam/Test/Enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://climax-game-jam/Test/Enemy2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://sounds/Motorcycle_Mayhem_Level_2.wav" type="AudioStream" id=5]
 [ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://climax-game-jam/Test/GameUI.gd" type="Script" id=7]
 [ext_resource path="res://climax-game-jam/Test/enemiespawner.gd" type="Script" id=8]
-[ext_resource path="res://climax-game-jam/Test/Boss.tscn" type="PackedScene" id=9]
+[ext_resource path="res://climax-game-jam/Test/Boss2.tscn" type="PackedScene" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
